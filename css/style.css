@@ -51,6 +51,10 @@ table {
 
 /* General */
 
+html {
+  height: 100%;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -70,27 +74,31 @@ h1 {
 /* HOW DO WE GET THIS BACKGROUND TO STRETCH? */
 
 #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  height: 100%;
   padding: 3% 0;
   text-align: center;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
   background-image: url("../images/restaurant.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 /* Food Displays */
 
-div[class|="food"] img {
-  width: 400px;
-  height: 250px;
-  border: 5px solid rgba(245,245,245,.7);
+div[class|="food"]{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-div[class|="food"] img:first-child {
-  margin-right: 5%;
+div[class|="food"] img {
+  width: 375px;
+  height: 250px;
+  margin: 1% 0;
+  border: 5px solid rgba(245,245,245,.7);
 }
 
 /* Recommendation */
