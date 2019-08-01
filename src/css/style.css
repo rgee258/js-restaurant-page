@@ -80,9 +80,10 @@ h1 {
   padding: 3% 0;
   text-align: center;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
-  background-image: url("../images/restaurant.jpg");
+  background-image: url('../images/restaurant.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 /* Nav */

@@ -1,3 +1,5 @@
+import './css/style.css';
+import restaurant from './images/restaurant.jpg';
 import { setup } from './load.js';
 import { homeContent } from './home.js';
 import { menuContent } from './menu.js';

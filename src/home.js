@@ -1,10 +1,13 @@
+import curry from './images/curry.jpg';
+import ramen from './images/ramen.jpg';
+import stirfry from './images/stirfry.jpg';
+import sushi from './images/sushi.jpg';
+
 function homeContent() {
   let tabbed = document.querySelector("#tabbed-content");
-  tabbed.appendChild(foodContent(1, "../images/ramen.jpg", 
-    "../images/sushi.jpg"))
+  tabbed.appendChild(foodContent(1, curry, ramen))
   tabbed.appendChild(recommendContent());
-  tabbed.appendChild(foodContent(2, "../images/stirfry.jpg", 
-    "../images/curry.jpg"))
+  tabbed.appendChild(foodContent(2, stirfry, sushi))
 }
 
 function foodContent(count, imageOnePath, imageTwoPath) {
