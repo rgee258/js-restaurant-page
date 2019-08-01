@@ -4,7 +4,6 @@ import { menuContent } from './menu.js';
 import { contactContent } from './contact.js';
 
 function getHome() {
-  console.log("Run");
   removeActive();
   clearTabbed();
   homeContent();
