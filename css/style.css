@@ -71,7 +71,6 @@ h1 {
 }
 
 /* Content */
-/* HOW DO WE GET THIS BACKGROUND TO STRETCH? */
 
 #content {
   display: flex;
@@ -86,7 +85,54 @@ h1 {
   background-size: cover;
 }
 
-/* Food Displays */
+/* Nav */
+
+nav {
+  width: 40%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  width: 100%;
+  margin-left: 3%;
+  padding-bottom: 2%;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 2vw;
+  font-variant: small-caps;
+  font-weight: bold;
+  background-color: rgba(245,245,245,.9);
+}
+
+nav ul li:not(.active) {
+  cursor: pointer;
+}
+
+nav ul .active {
+  color: rgba(245,245,245,.9);
+  background-color: rgba(26,82,118,.9);
+}
+
+/* Tabbed Content */
+
+#tabbed-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 5% 0;
+  border: 5px solid rgba(245,245,245,.9);
+}
+
+/* Home */
+
+/* Home - Food Displays */
 
 div[class|="food"]{
   display: flex;
@@ -98,10 +144,10 @@ div[class|="food"] img {
   width: 375px;
   height: 250px;
   margin: 1% 0;
-  border: 5px solid rgba(245,245,245,.7);
+  border: 5px solid rgba(245,245,245,.9);
 }
 
-/* Recommendation */
+/* Home - Recommendation */
 
 .recommendation {
   width: 60%;
@@ -122,4 +168,57 @@ div[class|="food"] img {
 
 .recommendation h4 {
   font-size: 2vw;
+}
+
+/* Menu */
+
+.menu-header {
+  margin-bottom: 4%;
+  font-size: 12vh;
+  font-family: 'Shadows Into Light', cursive;
+  color: rgba(169,204,227,0.9);
+}
+
+.menu-header:nth-of-type(2) {
+  margin-top: 4%;
+}
+
+.menu-item {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dish, .cost {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 7vh;
+}
+
+.dish {
+  color: rgba(245,245,245,.9);
+}
+
+.cost {
+  color: rgba(125,206,160,.9)
+}
+
+/* Contact */
+
+.contact-method {
+  margin-bottom: 1%;
+  font-size: 12vh;
+  font-family: 'Shadows Into Light', cursive;
+  color: rgba(169,204,227,0.9);
+}
+
+.contact-info {
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 7vh;
+  color: rgba(245,245,245,.9);
+}
+
+.contact:nth-of-type(2) {
+  margin-top: 8%;
 }
